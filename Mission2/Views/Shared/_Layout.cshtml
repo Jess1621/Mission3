@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <!--Bootstrap CSS-->
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!--Custom CSS-->
+    <link href="~/css/default.css" rel="stylesheet" />
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="~/icons8-turtle-50.png" />
+</head>
+<body>
+    <!--Bootstrap JS-->
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <!--Jquery-->
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a asp-controller="mission" asp-action="Index">Home</a>
+        <a asp-controller="mission" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <p>This is a footer!</p>
+    </div>
+
+</body>
+
+</html>
